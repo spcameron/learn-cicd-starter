@@ -22,6 +22,9 @@ jobs:
         run: ./scripts/buildprod.sh
 
   job_id:
+    name: Push to GAR
+    runs-on: ubuntu-latest
+
     steps:
     - id: 'auth'
       uses: 'google-github-actions/auth@v2'
